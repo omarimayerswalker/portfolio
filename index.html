@@ -1,25 +1,76 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="css/sass.css">
-        <link rel="stylesheet" href="css/styles.css">
-        <title>Flexbox</title>
-    </head>
-    <body>
-        <header>
-            <h1>Flexbox</h1>
-        </header>
-        <div class="container">
-            <div class="item"><span>item 1</span></div>
-            <div class="item">item 2</div>
-            <div class="item">item 3</div>
-            <div class="item">item 4</div>
-            <div class="item">item 5</div>
-        </div>
-        <footer>
-            <p>Footer</p>
-        </footer>
 
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <link href='https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto:400,300,100' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+  <link rel="stylesheet" href="bower_components/animate.css/animate.css">
+  <link rel="stylesheet" href="css/sass.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Omari Mayers-Walker</title>
+</head>
+
+<body>
+
+  <header id="header">
+    <div id="header-content">
+      <div id="header-logo">
+        <h1 class="logo">Omari Mayers-Walker</h1>
+        <p>Full Stack Web Developer</p>
+      </div>
+      <nav id="header-nav" role="navigation">
+        <ul class="nav">
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/omarimayerswalker">Github</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="name">
+      <h1>Driven by deep curiosity and a desire to better society,
+        I am dedicated to developing user-centric solutions to everyday problems.</h1>
+      <p class="webdev"><a href="#work">work</a></p>
+    </div>
+  </div>
+
+  <div id="work" class="container">
+    <div class="item">
+      <h2>Farmony</h2>
+      <img alt="Project 1" src="assets/images/farmony.png" width="500" />
+      <ul>
+        <li>HTML5 CSS JavaScript</li>
+        <!--         <li></li> -->
+        <!--         <li></li> -->
+      </ul>
+    </div>
+    <div class="item">
+      <h2>mum</h2>
+      <img alt="Project 1" src="assets/images/mum.png" width="500" />
+    </div>
+    <div class="item">
+      <h2>Concetration</h2>
+      <img alt="Project 1" src="assets/images/concentration.png" width="500" />
+    </div>
+  </div>
+
+  <div id="work_contact" class="container">
+    <p class="webdev"><a href="#header">home</a></p>
+    <p class="webdev"><a href="#contact">contact</a></p>
+  </div>
+
+
+  <div id="contact" class="container black">
+    <div class="item">item 1</div>
+    <div class="item email"><span>omari@fastmail.fm</span></div>
+    <div class="item">item 3</div>
+  </div>
+
+  <!--   <footer>
+  </footer> -->
+
+</body>
+
 </html>
