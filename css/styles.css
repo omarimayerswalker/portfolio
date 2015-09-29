@@ -7,6 +7,10 @@
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
+.grey {
+  color: grey;
+}
+
 html {
   scroll-behavior: smooth
 }
@@ -47,9 +51,10 @@ header div .name {
 }
 
 .fswd,
-.contact {
+#contact {
   font-size: 2.3em;
   font-weight: 100;
+  background: linear-gradient( #F3F3F3, #E0F4F4);
 }
 
 .logo {
@@ -79,18 +84,46 @@ header div .name {
 
 .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
-  align-items: center;
   min-height: 90vh;
   width: 100%;
 }
 
+.container2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  align-content: center;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  min-height: 90vh;
+  width: 100%;
+  align-content: center;
+}
+
 #work {
-  min-height: 85vh;
-  background: linear-gradient( #F9F9F9, #F3F3F3);
+  min-height: 80vh;
+  background: linear-gradient( #F9F9F9 ,#F3F3F3);
+}
+
+img {
+  width: 100%;
+}
+
+.figure {
+  margin-right: 1em;
+}
+
+.work-title {
+ flex: 1; 
 }
 
 .name {
@@ -106,7 +139,6 @@ header div .name {
 
 .webdev {
   text-align: center;
-  margin-top: 12%;
 }
 
 .webdev a {
@@ -115,43 +147,31 @@ header div .name {
 }
 
 .item {
-  width: 500px;
-  /* background: orange; */
+  display: flex;
+  align-items: flex-start;
+  width: 40em;
   text-align: center;
   line-height: 170px;
 }
 
-.item ul li {
+.item:nth-child(1){
+  align-self: flex-end;
 }
 
-#work_contact {
+.item:nth-child(3){
+  align-self: flex-end;
+}
+
+.item2 {
+  width: 50%;
+}
+
+#home_contact {
   min-height: 15vh;
   background-color: #F3F3F3;
 }
 
 .black {
-  min-height: 100vh;
-  background: linear-gradient( #F3F3F3, #C5F5F5);
-}
-
-#contact .item,
-span {
-  border-radius: 50%;
-  background-color: black;
-  color: #F9F9F9;
-  color: white;
-  text-shadow: 0;
-  font-weight: bold;
-  height: 200px;
-  width: 200px;
-
-}
-
-footer {
-  background-color: #E3E3E3;
-  width: 100%;
-  min-height: 10vh;
-  line-height: 10vh;
 }
 
 @media screen and (min-width:600px) {
@@ -183,5 +203,6 @@ footer {
     margin: 0 .5em;
     display: inline-block;
   }
-  .logo {}
+  .logo {
+  }
 }
