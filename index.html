@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link href='https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto:400,300,100' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto:400,300,100|Catamaran:500,600,700,800,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
   <link rel="stylesheet" href="bower_components/animate.css/animate.css">
   <link rel="stylesheet" href="css/sass.css">
@@ -16,13 +16,12 @@
   <header id="header">
     <div id="header-content">
       <div id="header-logo">
-        <h1 class="logo">Omari Mayers-Walker</h1>
-        <p class="grey">Full Stack Web Developer</p>
+        <h1 class="logo"><span>OMARI MAYERS-WALKER</span></h1>
+        <p>Web Developer</p>
       </div>
       <nav id="header-nav" role="navigation">
         <ul class="nav">
-          <li><a class="grey "href="#contact">Contact</a></li>
-          <li><a class="grey" href="https://github.com/omarimayerswalker">Github</a></li>
+          <li><a class="about_link grey" href="#contact">About</a></li>
         </ul>
       </nav>
     </div>
@@ -31,37 +30,82 @@
   <div class="brand">
     <div class="name">
       <h1>Driven by deep curiosity and a desire to better society,
-        I am dedicated to developing user-centric solutions to everyday problems.</h1>
+        I am dedicated to developing user-centric solutions to everyday problems.
+      </h1>
       <p class="grey webdev"><a href="#work">work</a></p>
     </div>
   </div>
 
   <div id="work" class="container1">
     <div class="row item">
-      <h2 class="column-copy work-title">Farmony</h2>
-      <p class="column-copy work-details">A web application to view local farmers markets and their vendors.</p>
-      <img class="column-img" alt="Project 1" src="assets/images/farmony.png" />
+      <ul class="column">
+        <li>
+          <h2 class="title"><a href="https://farmony.herokuapp.com/markets">Farmony</a></h2>
+        </li>
+        <p class="column-copy work-details">A web application to view local farmers markets and their vendors.</p>
+        </li>
+        <li>
+          <p class="tech grey">Express | Sequelize | PostgreSQL | HTML | JavaScript | Sass</p>
+        </li>
+      </ul>
+      <a href="https://farmony.herokuapp.com/markets">
+        <img class="column-img" alt="Farmony" src="assets/images/farmony.png" />
+      </a>
     </div>
     <div class="row item">
-      <h2 class="column-copy work-title2">mum</h2>
-      <img class="column-img" alt="Project 1" src="assets/images/mum.png" />
+      <ul class="column">
+        <li>
+          <h2 class="title"><a href="https://mum-app.herokuapp.com/accounts/sign_in">mum</a></h2>
+        </li>
+        <li>
+          <p class="column-copy work-details">Share ideas through photos, not words.</p>
+        </li>
+        <li>
+          <p class="tech grey">Ruby on Rails | PostgreSQL | HTML | Bootstrap</p>
+        </li>
+      </ul>
+      <a href="https://mum-app.herokuapp.com/accounts/sign_in">
+        <img class="column-img" alt="mum" src="assets/images/mum.png" />
+      </a>
     </div>
     <div class="row item">
-      <h2 class="column-copy work-title ">Concetration</h2>
-      <img class="column-img" alt="Project 1" src="assets/images/concentration.png" />
-      <p class="column-copy work-details">A concentration application.</p>
+      <ul class="column">
+        <li>
+          <h2 class="title "><a href="http://omarimayerswalker.github.io/">Concentration</a></h2>
+        </li>
+        <li>
+          <p class="column-copy work-details">A concentration application.</p>
+        </li>
+        <li>
+          <p class="tech grey">HTML | JavaScript | JQuery | CSS</p>
+        </li>
+      </ul>
+      <a href="http://omarimayerswalker.github.io/">
+        <img class="column-img" alt="Concentration" src="assets/images/concentration.png" />
+      </a>
     </div>
   </div>
 
   <div id="home_contact" class="container2">
     <div class="webdev"><a href="#header">home</a></div>
-    <div class="webdev"><a href="#contact">contact</a></div>
+    <div class="webdev"><a href="#contact">about</a></div>
   </div>
 
   <div id="contact" class="container3">
-    <div class="item2">item 1</div>
-    <div class="item2 email"><span>omari@fastmail.fm</span></div>
-    <div class="item2">item 3</div>
+    <div>
+      <h2>ABOUT</h2>
+      <div class="about">
+        <p class="grey">I am comfortabe with frontend and backend web development. I really like working on JavaScript heavy projects and web technologies like Node.js and Meteor.js.</p>
+      </div>
+      <img alt="headshot" id="headshot" src="assets/images/headshot.jpg" />
+    </div>
+    <h2>CONTACT</h2>
+    <a class="email" href="omari@fastmail.fm">omari@fastmail.fm</a>
+    <div>
+      <a class="icon grey" href="https://github.com/omarimayerswalker"></a>
+      <a class="icon grey" href="https://twitter.com/OmariMWalker"></a>
+      <a class="icon grey" href="https://www.linkedin.com/in/omarimayerswalker"></a>
+    </div>
   </div>
 
 </body>
